@@ -13,6 +13,7 @@
 /* #region ******** COMMON ******** */
 body{
     font-family: Arial, sans-serif;
+    color: var(--color_darkest);
 }
 /* #endregion ******** COMMON ******** */
 
@@ -21,6 +22,34 @@ body{
 .pseudo_fa::after{
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
+}
+
+.darkest_color{
+    color: var(--color_darkest) !important;
+}
+/* .color_dark_80{
+    color: var(--color_dark_80) !important;
+}
+.color_dark_60{
+    color: var(--color_dark_60) !important;
+}
+.color_dark_40{
+    color: var(--color_dark_40) !important;
+}
+.color_dark_20{
+    color: var(--color_dark_20) !important;
+}
+.color_dark_20{
+    color: var(--color_dark_20) !important;
+} */
+
+
+.btn-dark {
+    background-color: var(--color_dark_80);
+    border:none;
+}
+.btn-dark:hover {
+    background-color: var(--color_dark_60);
 }
 /* #endregion ******** UTILITY ******** */
 
@@ -40,9 +69,14 @@ body{
         /* Nav bar  */
         .dropdown_icon::after {
             font-size: .7rem;
+            color: var(--color_dark_60);
             content: "\f078";
             margin-left: .255em;
             vertical-align: center;
+        }
+
+        .nav_icons{
+            color: var(--color_dark_80);
         }
     /* #endregion ******** HEADER ******** */
 
@@ -55,3 +89,13 @@ body{
     /* #endregion ******** FOOTER ******** */
 
 /* #endregion ******** BODY ******** */
+
+
+/* #region ******** MEDIA QUERY ******** */
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+/* #endregion ******** MEDIA QUERY ******** */
