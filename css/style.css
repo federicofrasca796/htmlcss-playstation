@@ -9,7 +9,7 @@
     --color_brand: #0070D1;
     --color_secondary: #CD3D0F;
 
-    --top_bar_h: 50px;
+    --nav_h: 126px;
 }
 
 /* #region ******** DEBUG ******** */
@@ -73,7 +73,7 @@ body{
     /* #region ******** HEADER ******** */
         /* Top bar */
         #sony_bar{
-            height: var(--top_bar_h);
+            height: 50px;
             background-color: var(--color_darkest);
         }
         #sony_bar > img{
@@ -81,9 +81,6 @@ body{
         }
 
         /* Nav bar  */
-        .fixed-top{
-            top: var(--top_bar_h);
-        }
         .dropdown_icon::after {
             font-size: .7rem;
             color: var(--color_dark_60);
@@ -97,6 +94,9 @@ body{
         }
 
         /* Jumbotron */
+        .jumbo{
+            margin-top: var(--nav_h);
+        }
         .hero_img_wrapper{
             height:70vh;
         }
