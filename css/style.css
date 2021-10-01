@@ -10,6 +10,18 @@
     --color_secondary: #CD3D0F;
 }
 
+/* #region ******** DEBUG ******** */
+.debug .jumbo{
+    /* height: 110vh; */
+    background-color: rgba(255, 192, 203, 0.5);
+}
+.debug .hero_img_wrapper{
+    background-color: plum;
+}
+
+/* #endregion ******** DEBUG ******** */
+
+
 /* #region ******** COMMON ******** */
 body{
     font-family: Arial, sans-serif;
@@ -77,6 +89,11 @@ body{
 
         .nav_icons{
             color: var(--color_dark_80);
+        }
+
+        /* Jumbotron */
+        .hero_img_wrapper{
+            height:70vh;
         }
     /* #endregion ******** HEADER ******** */
 
