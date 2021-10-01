@@ -9,3 +9,37 @@
     --color_brand: #0070D1;
     --color_secondary: #CD3D0F;
 }
+
+/* #region ******** COMMON ******** */
+body{
+    font-family: Arial, sans-serif;
+}
+/* #endregion ******** COMMON ******** */
+
+
+/* #region ******** UTILITY ******** */
+
+/* #endregion ******** UTILITY ******** */
+
+
+/* #region ******** BODY ******** */
+
+    /* #region ******** HEADER ******** */
+        .sony_bar{
+            height: 50px;
+            background-color: var(--color_darkest);
+        }
+        .sony_bar > img{
+            height: 50%;
+        }
+    /* #endregion ******** HEADER ******** */
+
+    /* #region ******** MAIN ******** */
+
+    /* #endregion ******** MAIN ******** */
+
+    /* #region ******** FOOTER ******** */
+
+    /* #endregion ******** FOOTER ******** */
+
+/* #endregion ******** BODY ******** */
