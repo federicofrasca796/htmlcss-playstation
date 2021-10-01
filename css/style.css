@@ -18,19 +18,31 @@ body{
 
 
 /* #region ******** UTILITY ******** */
-
+.pseudo_fa::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
 /* #endregion ******** UTILITY ******** */
 
 
 /* #region ******** BODY ******** */
 
     /* #region ******** HEADER ******** */
-        .sony_bar{
+        /* Top bar */
+        #sony_bar{
             height: 50px;
             background-color: var(--color_darkest);
         }
-        .sony_bar > img{
+        #sony_bar > img{
             height: 50%;
+        }
+
+        /* Nav bar  */
+        .dropdown_icon::after {
+            font-size: .7rem;
+            content: "\f078";
+            margin-left: .255em;
+            vertical-align: center;
         }
     /* #endregion ******** HEADER ******** */
 
