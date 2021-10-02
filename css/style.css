@@ -53,6 +53,13 @@ p{
     font-size: 1.4rem;
     margin: 2rem 0;
 }
+a{
+    color: inherit;
+    text-decoration: none;
+}
+a:hover{
+    color: inherit;
+}
 /* #endregion ******** COMMON ******** */
 
 
