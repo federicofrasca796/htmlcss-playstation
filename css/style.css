@@ -1,13 +1,14 @@
 :root{
     --color_darkest: #000;
     --color_dark_80: #363636;
-    --color_dark_60: #A4A4A4;
-    --color_dark_40: #BEBCBB;
-    --color_dark_20: #D9DADC;
-    --color_dark_20: #D9DADC;
+    --color_dark_60: #727272;
+    --color_dark_40: #A4A4A4;
+    --color_dark_20: #BEBCBB;
+    --color_dark_10: #D9DADC;
     --color_brand_80: #161C3B;
     --color_brand_40: #00439C;
     --color_brand: #2D64E6;
+    --color_brand_light: #187FD2;
     --color_secondary: #CD3D0F;
 
     --nav_h: 126px;
@@ -15,13 +16,12 @@
 
 /* #region ******** DEBUG ******** */
 .debug .jumbo{
-    /* height: 110vh; */
     background-color: rgba(255, 192, 203, 0.5);
 }
 .debug .hero_img_wrapper{
     background-color: plum;
 }
-.debug #ps5-showcase{
+.debug #ps5_showcase{
     background-color: cornflowerblue  ;
 }
 .debug #games_excl,
@@ -45,7 +45,7 @@ body{
     color: var(--color_darkest);
 }
 h1{
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 2rem;
 }
 p{
@@ -61,16 +61,13 @@ p{
     font-weight: 900;
 }
 
-.darkest_color{
+.color_darkest{
     color: var(--color_darkest) !important;
 }
-
-.btn_secondary {
-    color: #fff;
-    background-color: var(--color_secondary);
-    border-color: var(--color_secondary);
+/* .color_brand_light{
+    color: var(--color_brand_light) !important;
 }
-/* .color_dark_80{
+.color_dark_80{
     color: var(--color_dark_80) !important;
 }
 .color_dark_60{
@@ -82,10 +79,20 @@ p{
 .color_dark_20{
     color: var(--color_dark_20) !important;
 }
-.color_dark_20{
-    color: var(--color_dark_20) !important;
+.color_dark_10{
+    color: var(--color_dark_10) !important;
 } */
 
+.btn_primary{
+    color: #fff;
+    background-color: var(--color_brand);
+    border-color: var(--color_brand);
+}
+.btn_secondary {
+    color: #fff;
+    background-color: var(--color_secondary);
+    border-color: var(--color_secondary);
+}
 
 .btn-dark {
     background-color: var(--color_dark_80);
@@ -145,7 +152,27 @@ p{
     /* #endregion ******** HEADER ******** */
 
     /* #region ******** MAIN ******** */
+        .title_payoff{
+            font-size: 1.2rem;
+            color: var(--color_brand_light);
+            text-transform: uppercase;
+            margin:0;
+        }
+        .subtitle{
+            color: var(--color_dark_60);
+            font-size: 1.5rem;
+            padding-top: .5rem;
+        }
+        
 
+        .ps5_accessories > [class^="col"]{
+            opacity: .7;
+        }
+        .ps5_accessories > [class~="selected"]{
+            border-bottom: 3px solid var(--color_brand_light);
+            opacity: 1;
+        }
+        
     /* #endregion ******** MAIN ******** */
 
     /* #region ******** FOOTER ******** */
