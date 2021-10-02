@@ -20,6 +20,9 @@
 .debug .hero_img_wrapper{
     background-color: plum;
 }
+.debug #product-showcase{
+    background-color: powderblue;
+}
 
 /* #endregion ******** DEBUG ******** */
 
