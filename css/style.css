@@ -5,8 +5,9 @@
     --color_dark_40: #BEBCBB;
     --color_dark_20: #D9DADC;
     --color_dark_20: #D9DADC;
-    --color_brand_dark: #161C3B;
-    --color_brand: #0070D1;
+    --color_brand_80: #161C3B;
+    --color_brand_40: #00439C;
+    --color_brand: #2D64E6;
     --color_secondary: #CD3D0F;
 
     --nav_h: 126px;
@@ -121,7 +122,10 @@ body{
     /* #endregion ******** MAIN ******** */
 
     /* #region ******** FOOTER ******** */
-
+        #site_footer{
+            background-color: var(--color_brand_40);
+            color: white;
+        }
     /* #endregion ******** FOOTER ******** */
 
 /* #endregion ******** BODY ******** */
