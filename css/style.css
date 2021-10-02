@@ -24,8 +24,9 @@
     background-color: cornflowerblue  ;
 }
 .debug #games_excl,
-.debug #ps_plus{
-    background-color: grey;
+.debug #ps_plus,
+.debug #ps_now{
+    background-color: lightgrey;
 }
 .debug #explore_ps4{
     background-color: darkkhaki;
