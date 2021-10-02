@@ -20,8 +20,11 @@
 .debug .hero_img_wrapper{
     background-color: plum;
 }
-.debug #product-showcase{
-    background-color: powderblue;
+.debug #ps5-showcase{
+    background-color: cornflowerblue  ;
+}
+.debug #games_excl{
+    background-color: grey;
 }
 
 /* #endregion ******** DEBUG ******** */
