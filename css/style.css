@@ -193,6 +193,9 @@ a:hover{
         #ps_plus{
             background-color: var(--color_dark_20);
         }
+        #ps_now{
+            background-color: var(--color_brand_80)
+        }
     /* #endregion ******** MAIN ******** */
 
     /* #region ******** FOOTER ******** */
