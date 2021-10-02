@@ -23,7 +23,8 @@
 .debug #ps5-showcase{
     background-color: cornflowerblue  ;
 }
-.debug #games_excl{
+.debug #games_excl,
+.debug #ps_plus{
     background-color: grey;
 }
 .debug #explore_ps4{
