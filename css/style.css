@@ -49,9 +49,13 @@ h1{
     font-size: 3rem;
     margin-bottom: 2rem;
 }
-p{
-    font-size: 1.4rem;
+p {
     margin: 2rem 0;
+    font-size: 1.1rem;
+}
+.jumbo p,
+#games_excl p{
+    font-size: 1.4rem;
 }
 a{
     color: inherit;
@@ -73,6 +77,13 @@ a:hover{
     color: var(--color_darkest) !important;
 }
 
+.btn-dark {
+    background-color: var(--color_dark_80);
+    border:none;
+}
+.btn-dark:hover {
+    background-color: var(--color_dark_60);
+}
 .btn_primary{
     color: #fff;
     background-color: var(--color_brand);
@@ -83,14 +94,13 @@ a:hover{
     background-color: var(--color_secondary);
     border-color: var(--color_secondary);
 }
+.btn_dark_10{
+    color: var(--color_brand);
+    background-color: var(--color_dark_10);
+    border-color: var(--color_dark_10);
+}
 
-.btn-dark {
-    background-color: var(--color_dark_80);
-    border:none;
-}
-.btn-dark:hover {
-    background-color: var(--color_dark_60);
-}
+
 .active_card{
     border: 3px solid var(--color_brand);
 }
@@ -153,7 +163,7 @@ a:hover{
         }
         .subtitle{
             color: var(--color_dark_60);
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             padding-top: .5rem;
         }
         
@@ -174,6 +184,14 @@ a:hover{
         
         .new_games{
             background-color: var(--color_dark_90);
+        }
+
+        .card{
+            border:none;
+        }
+
+        #ps_plus{
+            background-color: var(--color_dark_20);
         }
     /* #endregion ******** MAIN ******** */
 
