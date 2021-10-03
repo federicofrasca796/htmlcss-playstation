@@ -1,5 +1,4 @@
 :root{
-    --color_darkest: #000;
     --color_dark_90: #1F1F1F;
     --color_dark_80: #363636;
     --color_dark_60: #727272;
@@ -74,8 +73,12 @@ a:hover{
     font-weight: 900;
 }
 
-.color_darkest{
-    color: var(--color_darkest) !important;
+ul.list_custom li::before {
+    content: "\2022";
+    color: var(--color_brand);
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 1rem;
 }
 
 .btn-dark {
@@ -123,7 +126,6 @@ a:hover{
         /* Top bar */
         #sony_bar{
             height: 50px;
-            background-color: var(--color_darkest);
         }
         #sony_bar > img{
             height: 50%;
@@ -135,13 +137,24 @@ a:hover{
             color: var(--color_dark_60);
             content: "\f078";
             margin-left: .255em;
-            vertical-align: center;
+            vertical-align: middle;
+        }
+        [src*="lens.svg"]{
+            width: 30px;
         }
 
-        .nav_icons{
-            color: var(--color_dark_80);
+        .dropdown-menu {
+            border: none;
+            border-radius: 0 0 5px 5px;
+            width: 100%;
         }
-
+        .dropdown-menu[data-bs-popper] {
+            margin-top: 0;
+        }
+        .dropdown-item{
+            color: var(--color_darkest);
+            display:inline;
+        }
         /* Jumbotron */
         .jumbo{
             margin-top: var(--nav_h);
