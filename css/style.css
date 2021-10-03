@@ -103,7 +103,7 @@ a:hover{
 
 
 .active_card{
-    border: 3px solid var(--color_brand);
+    border: 2px solid var(--color_brand);
 }
 
 .bg_img_wraps{
@@ -148,9 +148,6 @@ a:hover{
         }
         .hero_bg{
             background-image: url(../img/jumbo-bg.png);
-        }
-        .px_1{
-            padding: 0 1rem;
         }
         .thumbnail{
             padding: .15rem;
@@ -202,7 +199,9 @@ a:hover{
         .card{
             border:none;
         }
-
+        .card-body{
+            padding: 1rem 0;
+        }
         #ps_plus{
             background-color: var(--color_dark_20);
         }
