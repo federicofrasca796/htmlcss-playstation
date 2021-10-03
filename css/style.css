@@ -111,6 +111,9 @@ a:hover{
     background-size: cover;
     background-position-x: center;
 }
+.show_md{
+    display: none;
+}
 /* #endregion ******** UTILITY ******** */
 
 
@@ -169,12 +172,22 @@ a:hover{
         }
         
 
-        .ps5_accessories > [class^="col"]{
-            opacity: .7;
+        .ps5_accessories > div{
+            opacity: .6;
         }
-        .ps5_accessories > [class~="selected"]{
-            border-bottom: 3px solid var(--color_brand_light);
+        .ps5_accessories .selected{
             opacity: 1;
+        }
+        .ps5_accessories .selected::after{
+            content:"";
+            display:inline-block;
+            width: 90%;
+            height: 3px;
+            background-color: var(--color_brand_light);
+            position:absolute;
+            bottom:0;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
 
@@ -221,10 +234,17 @@ a:hover{
 
 /* #region ******** MEDIA QUERY ******** */
 
-@media screen and (min-width: 575.98px){
-    .px_1{
-        padding: 0 3rem;
+@media screen and (min-width: 767.98px){
+    .p_md_0{
+        padding: 0 !important;
     }
+    .w_md_50{
+        width: 50% !important;
+    }
+    .show_md{
+        display: block;
+    }
+    
 }
 @media (min-width: 992px){
     .navbar-expand-lg .navbar-nav .nav-link {
