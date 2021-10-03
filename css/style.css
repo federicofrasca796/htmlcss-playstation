@@ -168,7 +168,6 @@ a:hover{
         .subtitle{
             color: var(--color_dark_60);
             font-size: 1.3rem;
-            padding-top: .5rem;
         }
         
 
@@ -250,6 +249,10 @@ a:hover{
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 1rem;
         padding-left: 1rem;
+    }
+
+    .w_lg_60{
+        width: 60% !important;
     }
 }
 /* #endregion ******** MEDIA QUERY ******** */
