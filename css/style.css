@@ -56,7 +56,7 @@ main p {
 }
 .jumbo p,
 #games_excl p{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 a{
     color: inherit;
@@ -150,8 +150,8 @@ a:hover{
             padding: 0 1rem;
         }
         .thumbnail{
-            padding: .25rem;
-            border-radius: 1.5rem;
+            padding: .15rem;
+            border-radius: 1.2rem;
         }
     /* #endregion ******** HEADER ******** */
 
