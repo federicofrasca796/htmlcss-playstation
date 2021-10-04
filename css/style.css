@@ -10,12 +10,11 @@
     --color_brand: #2D64E6;
     --color_brand_light: #187FD2;
     --color_secondary: #CD3D0F;
-
-    --nav_h: 126px;
 }
 
 /* #region ******** DEBUG ******** */
-.debug #jumbo{
+
+/* .debug #jumbo{
     background-color: rgba(255, 192, 203, 0.5);
 }
 .debug .hero_img_wrapper{
@@ -34,7 +33,7 @@
 }
 .debug #discounts{
     background-color: darksalmon;
-}
+} */
 
 /* #endregion ******** DEBUG ******** */
 
@@ -76,29 +75,62 @@ ul.list_custom li::before {
     margin-left: 1rem;
 }
 
+.btn:hover{
+    /* transition: .2s outline-offset ease; */
+}
+.btn_primary:hover,
+.btn_secondary:hover,
+.btn-dark:hover,
+.btn_dark_10:hover,
+.btn-light:hover {
+    outline-width: 2px;
+    outline-offset: 2px;
+    transition: .1s outline-offset ease;
+
+}
 .btn-dark {
     background-color: var(--color_dark_80);
-    border:none;
+    outline: var(--color_dark_80) solid 4px;
 }
 .btn-dark:hover {
-    background-color: var(--color_dark_60);
+    color: #fff;
+    background-color: var(--color_dark_80);
 }
 .btn_primary{
     color: #fff;
     background-color: var(--color_brand);
-    border-color: var(--color_brand);
+    outline: var(--color_brand) solid 4px;
+}
+.btn_primary:hover {
+    color: #fff;
+    background-color: var(--color_brand);
 }
 .btn_secondary {
     color: #fff;
     background-color: var(--color_secondary);
-    border-color: var(--color_secondary);
+    outline: var(--color_secondary) solid 4px;
+}
+.btn_secondary:hover {
+    color: #fff;
+    background-color: var(--color_secondary);
 }
 .btn_dark_10{
     color: var(--color_brand);
     background-color: var(--color_dark_10);
-    border-color: var(--color_dark_10);
+    outline: var(--color_dark_10) solid 4px;
 }
+.btn_dark_10:hover {
+    /* color: #fff; */
+    background-color: var(--color_dark_10);
 
+}
+.btn-light {
+    outline: var(--color_dark_10) solid 4px;
+}
+.btn-light:hover{
+    color: #000;
+    background-color: #fff;
+}
 
 .active_card{
     border: 2px solid var(--color_brand);
@@ -138,7 +170,7 @@ ul.list_custom li::before {
             height: 10px;
             margin-left: .255em;
         }
-        .nav-link:hover.dropdown_icon::after{
+        .nav-link:focus.dropdown_icon::after{
             background-image: url(../img/chevron-down-solid-hover.svg);
             transform: rotate(180deg);
         }
