@@ -15,7 +15,7 @@
 }
 
 /* #region ******** DEBUG ******** */
-.debug .jumbo{
+.debug #jumbo{
     background-color: rgba(255, 192, 203, 0.5);
 }
 .debug .hero_img_wrapper{
@@ -53,7 +53,7 @@ main p {
     margin: 2rem 0;
     font-size: 1.1rem;
 }
-.jumbo p,
+#jumbo p,
 #games_excl p{
     font-size: 1.2rem;
 }
@@ -165,9 +165,6 @@ ul.list_custom li::before {
             box-shadow: 0px 0px 6px 3px var(--color_dark_10);
         }
         /* Jumbotron */
-        .jumbo{
-            margin-top: var(--nav_h);
-        }
         .hero_bg{
             background-image: url(../img/jumbo-bg.png);
         }
