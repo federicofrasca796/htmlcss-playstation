@@ -168,12 +168,17 @@ ul.list_custom li::before {
             height: 10px;
             margin-left: .255em;
         }
-        .nav-link:focus.dropdown_icon::after{
+        .nav-link:hover.dropdown_icon::after{
             background-image: url(../img/chevron-down-solid-hover.svg);
+        }
+        .nav-link:focus.dropdown_icon::after{
             transform: rotate(180deg);
         }
         .nav-link:hover{
             color: var(--color_brand) !important;
+        }
+        .nav-link{
+            transition: all .5s;
         }
 
         .dropdown-menu {
@@ -204,9 +209,11 @@ ul.list_custom li::before {
         .thumbnail{
             padding: .15rem;
             border-radius: 1.2rem;
+        }
+        .translate_up{
             transition: transform .5s;
         }
-        .thumbnail:hover{
+        .translate_up:hover{
             transform: translateY(-5%);
         }
     /* #endregion ******** HEADER ******** */
@@ -224,13 +231,14 @@ ul.list_custom li::before {
         }
         
 
-        .ps5_accessories > div{
+        #ps5_accessories > div{
             opacity: .6;
+            transition: opacity .5s; 
         }
-        .ps5_accessories .selected{
+        #ps5_accessories .selected{
             opacity: 1;
         }
-        .ps5_accessories .selected::after{
+        #ps5_accessories .selected::after{
             content:"";
             display:inline-block;
             width: 90%;
@@ -241,7 +249,9 @@ ul.list_custom li::before {
             left: 50%;
             transform: translateX(-50%);
         }
-
+        #ps5_accessories > div:hover{
+            opacity: 1;
+        }
 
         .game_bg{
             height:inherit;
@@ -303,7 +313,7 @@ ul.list_custom li::before {
     }
     
 }
-@media (min-width: 992px){
+@media screen and (min-width: 992px){
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 1rem;
         padding-left: 1rem;
