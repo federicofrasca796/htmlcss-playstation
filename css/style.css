@@ -68,11 +68,6 @@ a:hover{
 
 
 /* #region ******** UTILITY ******** */
-.pseudo_fa::after{
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-}
-
 ul.list_custom li::before {
     content: "\2022";
     color: var(--color_brand);
@@ -112,6 +107,7 @@ ul.list_custom li::before {
 .bg_img_wraps{
     height: 75vh;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position-x: center;
 }
 .show_md{
@@ -133,14 +129,21 @@ ul.list_custom li::before {
 
         /* Nav bar  */
         .dropdown_icon::after {
-            font-size: .7rem;
-            color: var(--color_dark_60);
-            content: "\f078";
+            content: "";
+            background-image: url(../img/chevron-down-solid.svg);
+            background-size:cover;
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 10px;
+            height: 10px;
             margin-left: .255em;
-            vertical-align: middle;
         }
-        [src*="lens.svg"]{
-            width: 30px;
+        .nav-link:hover.dropdown_icon::after{
+            background-image: url(../img/chevron-down-solid-hover.svg);
+            transform: rotate(180deg);
+        }
+        .nav-link:hover{
+            color: var(--color_brand) !important;
         }
 
         .dropdown-menu {
@@ -153,7 +156,13 @@ ul.list_custom li::before {
         }
         .dropdown-item{
             color: var(--color_darkest);
-            display:inline;
+            display:inline-block;
+            border-radius: 5px;
+        }
+        .dropdown-item:focus, .dropdown-item:hover {
+            color: inherit;
+            background-color: inherit;
+            box-shadow: 0px 0px 6px 3px var(--color_dark_10);
         }
         /* Jumbotron */
         .jumbo{
