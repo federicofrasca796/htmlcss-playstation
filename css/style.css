@@ -43,7 +43,7 @@
 /* #region ******** COMMON ******** */
 body{
     font-family: Arial, sans-serif;
-    color: var(--color_darkest);
+    color: #000;
 }
 h1{
     font-size: 3rem;
@@ -82,52 +82,49 @@ ul.list_custom li::before {
 .btn-dark:hover,
 .btn_dark_10:hover,
 .btn-light:hover {
-    outline-width: 2px;
     outline-offset: 2px;
     transition: .1s outline-offset ease;
 }
 .btn-dark {
     background-color: var(--color_dark_80);
-    outline: var(--color_dark_80) solid 4px;
 }
 .btn-dark:hover {
     color: #fff;
     background-color: var(--color_dark_80);
+    outline: var(--color_dark_80) solid 2.5px;
 }
 .btn_primary{
     color: #fff;
     background-color: var(--color_brand);
-    outline: var(--color_brand) solid 4px;
 }
 .btn_primary:hover {
     color: #fff;
     background-color: var(--color_brand);
+    outline: var(--color_brand) solid 2.5px;
 }
 .btn_secondary {
     color: #fff;
     background-color: var(--color_secondary);
-    outline: var(--color_secondary) solid 4px;
 }
 .btn_secondary:hover {
     color: #fff;
     background-color: var(--color_secondary);
+    outline: var(--color_secondary) solid 2.5px;
 }
 .btn_dark_10{
     color: var(--color_brand);
     background-color: var(--color_dark_10);
-    outline: var(--color_dark_10) solid 4px;
 }
 .btn_dark_10:hover {
-    /* color: #fff; */
+    color: var(--color_brand);
     background-color: var(--color_dark_10);
+    outline: var(--color_dark_10) solid 2.5px;
 
-}
-.btn-light {
-    outline: var(--color_dark_10) solid 4px;
 }
 .btn-light:hover{
     color: #000;
     background-color: #fff;
+    outline: #fff solid 2.5px;
 }
 
 .active_card{
@@ -167,6 +164,10 @@ ul.list_custom li::before {
             width: 10px;
             height: 10px;
             margin-left: .255em;
+            transition: background-image 0.2s ease-in-out;
+        }
+        .nav-link{
+            transition: color 0.2s ease-in-out;
         }
         .nav-link:hover.dropdown_icon::after{
             background-image: url(../img/chevron-down-solid-hover.svg);
@@ -177,9 +178,7 @@ ul.list_custom li::before {
         .nav-link:hover{
             color: var(--color_brand) !important;
         }
-        .nav-link{
-            transition: all .5s;
-        }
+        
 
         .dropdown-menu {
             border: none;
@@ -190,7 +189,7 @@ ul.list_custom li::before {
             margin-top: 0;
         }
         .dropdown-item{
-            color: var(--color_darkest);
+            color: #000;
             display:inline-block;
             border-radius: 5px;
         }
@@ -315,8 +314,8 @@ ul.list_custom li::before {
 }
 @media screen and (min-width: 992px){
     .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: 1rem;
-        padding-left: 1rem;
+        padding-right: .5rem;
+        padding-left: .5rem;
     }
 
     .w_lg_60{
