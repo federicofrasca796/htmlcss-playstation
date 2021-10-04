@@ -10,6 +10,8 @@
     --color_brand: #2D64E6;
     --color_brand_light: #187FD2;
     --color_secondary: #CD3D0F;
+
+    --nav_h: 126px;
 }
 
 /* #region ******** DEBUG ******** */
@@ -75,9 +77,6 @@ ul.list_custom li::before {
     margin-left: 1rem;
 }
 
-.btn:hover{
-    /* transition: .2s outline-offset ease; */
-}
 .btn_primary:hover,
 .btn_secondary:hover,
 .btn-dark:hover,
@@ -86,7 +85,6 @@ ul.list_custom li::before {
     outline-width: 2px;
     outline-offset: 2px;
     transition: .1s outline-offset ease;
-
 }
 .btn-dark {
     background-color: var(--color_dark_80);
@@ -197,12 +195,19 @@ ul.list_custom li::before {
             box-shadow: 0px 0px 6px 3px var(--color_dark_10);
         }
         /* Jumbotron */
+        #jumbo{
+            margin-top: var(--nav_h);
+        }
         .hero_bg{
             background-image: url(../img/jumbo-bg.png);
         }
         .thumbnail{
             padding: .15rem;
             border-radius: 1.2rem;
+            transition: transform .5s;
+        }
+        .thumbnail:hover{
+            transform: translateY(-5%);
         }
     /* #endregion ******** HEADER ******** */
 
